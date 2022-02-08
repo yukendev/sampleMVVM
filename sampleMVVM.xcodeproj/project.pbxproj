@@ -11,11 +11,8 @@
 		45BD933827B2032800339939 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD933727B2032800339939 /* SceneDelegate.swift */; };
 		45BD933A27B2032800339939 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD933927B2032800339939 /* ViewController.swift */; };
 		45BD933D27B2032800339939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45BD933B27B2032800339939 /* Main.storyboard */; };
-		45BD933F27B2032A00339939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45BD933E27B2032A00339939 /* Assets.xcassets */; };
 		45BD934227B2032A00339939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45BD934027B2032A00339939 /* LaunchScreen.storyboard */; };
-		45BD934D27B2032B00339939 /* sampleMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD934C27B2032B00339939 /* sampleMVVMTests.swift */; };
-		45BD935727B2032B00339939 /* sampleMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD935627B2032B00339939 /* sampleMVVMUITests.swift */; };
-		45BD935927B2032B00339939 /* sampleMVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD935827B2032B00339939 /* sampleMVVMUITestsLaunchTests.swift */; };
+		45BD936927B2040200339939 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD936827B2040200339939 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,14 +38,11 @@
 		45BD933727B2032800339939 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		45BD933927B2032800339939 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		45BD933C27B2032800339939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		45BD933E27B2032A00339939 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45BD934127B2032A00339939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45BD934327B2032A00339939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45BD934827B2032B00339939 /* sampleMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		45BD934C27B2032B00339939 /* sampleMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleMVVMTests.swift; sourceTree = "<group>"; };
 		45BD935227B2032B00339939 /* sampleMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		45BD935627B2032B00339939 /* sampleMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleMVVMUITests.swift; sourceTree = "<group>"; };
-		45BD935827B2032B00339939 /* sampleMVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleMVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		45BD936827B2040200339939 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				45BD933427B2032800339939 /* sampleMVVM */,
-				45BD934B27B2032B00339939 /* sampleMVVMTests */,
-				45BD935527B2032B00339939 /* sampleMVVMUITests */,
 				45BD933327B2032800339939 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,32 +91,39 @@
 		45BD933427B2032800339939 /* sampleMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				45BD936727B203EA00339939 /* View */,
+				45BD936627B203E200339939 /* ViewModel */,
+				45BD936527B203DE00339939 /* Model */,
 				45BD933527B2032800339939 /* AppDelegate.swift */,
 				45BD933727B2032800339939 /* SceneDelegate.swift */,
-				45BD933927B2032800339939 /* ViewController.swift */,
-				45BD933B27B2032800339939 /* Main.storyboard */,
-				45BD933E27B2032A00339939 /* Assets.xcassets */,
 				45BD934027B2032A00339939 /* LaunchScreen.storyboard */,
 				45BD934327B2032A00339939 /* Info.plist */,
 			);
 			path = sampleMVVM;
 			sourceTree = "<group>";
 		};
-		45BD934B27B2032B00339939 /* sampleMVVMTests */ = {
+		45BD936527B203DE00339939 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				45BD934C27B2032B00339939 /* sampleMVVMTests.swift */,
 			);
-			path = sampleMVVMTests;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		45BD935527B2032B00339939 /* sampleMVVMUITests */ = {
+		45BD936627B203E200339939 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				45BD935627B2032B00339939 /* sampleMVVMUITests.swift */,
-				45BD935827B2032B00339939 /* sampleMVVMUITestsLaunchTests.swift */,
+				45BD936827B2040200339939 /* ViewModel.swift */,
 			);
-			path = sampleMVVMUITests;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		45BD936727B203EA00339939 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45BD933B27B2032800339939 /* Main.storyboard */,
+				45BD933927B2032800339939 /* ViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +231,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				45BD934227B2032A00339939 /* LaunchScreen.storyboard in Resources */,
-				45BD933F27B2032A00339939 /* Assets.xcassets in Resources */,
 				45BD933D27B2032800339939 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +258,7 @@
 			files = (
 				45BD933A27B2032800339939 /* ViewController.swift in Sources */,
 				45BD933627B2032800339939 /* AppDelegate.swift in Sources */,
+				45BD936927B2040200339939 /* ViewModel.swift in Sources */,
 				45BD933827B2032800339939 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45BD934D27B2032B00339939 /* sampleMVVMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45BD935927B2032B00339939 /* sampleMVVMUITestsLaunchTests.swift in Sources */,
-				45BD935727B2032B00339939 /* sampleMVVMUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordConfirmTextField: UITextField!
     @IBOutlet weak var validationLabel: UILabel!
     @IBOutlet weak var registerButton: UIButton!
-    
     private var viewModel: ViewModel!
     private let disposeBag = DisposeBag()
     
@@ -28,8 +27,7 @@ class ViewController: UIViewController {
             input: (
                 idTextField.rx.text.orEmpty.asDriver(),
                 passwordTextField.rx.text.orEmpty.asDriver(),
-                passwordConfirmTextField.rx.text.orEmpty.asDriver(),
-                registerButton.rx.tap.asSignal()
+                passwordConfirmTextField.rx.text.orEmpty.asDriver()
             )
         )
         
@@ -38,6 +36,14 @@ class ViewController: UIViewController {
             self.validationLabel.text = validationresult.text
             self.validationLabel.textColor = validationresult.textColor
         }).disposed(by: disposeBag)
+    }
+    
+    // 登録ボタンがタップされた時の処理
+    @IBAction func registerButtonTapped(_ sender: Any) {
+        let alert = UIAlertController(title: "登録！", message: "", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "ok", style: .cancel, handler: nil)
+        alert.addAction(ok)
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

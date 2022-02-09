@@ -15,8 +15,7 @@ final class ViewModel {
     typealias Input = (
         idDriver: Driver<String>,
         passwordDriver: Driver<String>,
-        passwordConfirmDriver: Driver<String>,
-        registerButtonSignal: Signal<Void>
+        passwordConfirmDriver: Driver<String>
     )
     
     // バリデーションの結果

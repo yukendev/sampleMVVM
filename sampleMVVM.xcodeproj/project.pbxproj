@@ -14,6 +14,7 @@
 		45BD933D27B2032800339939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45BD933B27B2032800339939 /* Main.storyboard */; };
 		45BD934227B2032A00339939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45BD934027B2032A00339939 /* LaunchScreen.storyboard */; };
 		45BD936927B2040200339939 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD936827B2040200339939 /* ViewModel.swift */; };
+		45D96FDD27B3F0E30069BB8A /* ValidationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D96FDC27B3F0E20069BB8A /* ValidationModel.swift */; };
 		481E5CB5C55B7713E76FF8CD /* Pods_sampleMVVM_sampleMVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD79FB91CA000F56176B7D68 /* Pods_sampleMVVM_sampleMVVMUITests.framework */; };
 		F067A451BDD9F5380FC60970 /* Pods_sampleMVVMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DBEA19F0B30EC74B6C41DE /* Pods_sampleMVVMTests.framework */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		45BD934827B2032B00339939 /* sampleMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45BD935227B2032B00339939 /* sampleMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45BD936827B2040200339939 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		45D96FDC27B3F0E20069BB8A /* ValidationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationModel.swift; sourceTree = "<group>"; };
 		50779E76E1CFB9D5342CEAAF /* Pods-sampleMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleMVVM.release.xcconfig"; path = "Target Support Files/Pods-sampleMVVM/Pods-sampleMVVM.release.xcconfig"; sourceTree = "<group>"; };
 		717094F497D8038F3C1F9A0C /* Pods_sampleMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sampleMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF4665CF197F5BA7E6FA81D /* Pods-sampleMVVMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleMVVMTests.debug.xcconfig"; path = "Target Support Files/Pods-sampleMVVMTests/Pods-sampleMVVMTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		45BD936527B203DE00339939 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				45D96FDC27B3F0E20069BB8A /* ValidationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,7 +156,6 @@
 				7BF4665CF197F5BA7E6FA81D /* Pods-sampleMVVMTests.debug.xcconfig */,
 				231F7EE8E54D57AAC3B56B6C /* Pods-sampleMVVMTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -408,6 +410,7 @@
 				45BD933A27B2032800339939 /* ViewController.swift in Sources */,
 				45BD933627B2032800339939 /* AppDelegate.swift in Sources */,
 				45BD936927B2040200339939 /* ViewModel.swift in Sources */,
+				45D96FDD27B3F0E30069BB8A /* ValidationModel.swift in Sources */,
 				45BD933827B2032800339939 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
